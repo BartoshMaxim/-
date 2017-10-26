@@ -1,0 +1,27 @@
+﻿<Window x:Class="lab1_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab1_3"
+        mc:Ignorable="d"
+        Title="Инсталятор" Height="250" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.7*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="ChooseFolderBtn" Width="100" Height="30" Click="ChooseFolderBtn_Click">Выбрать папку</Button>
+        <Label x:Name="PathFolderLbl" Grid.Column="1" Grid.ColumnSpan="3" Height="25"></Label>
+        <Label Grid.Row="1" Height="25">Имя программы</Label>
+        <TextBox TextChanged="ProgramName_TextChanged" x:Name="ProgramName" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Height="30" Margin="20"></TextBox>
+        <Button x:Name="SetupBtn" Grid.Row="2" Grid.Column="1" Width="150" Height="30" Click="SetupBtn_Click">Установить программу</Button>
+        <Button x:Name="CloseBtn" Grid.Row="2" Grid.Column="2"  Width="100" Height="30" Click="CloseBtn_Click">Закрыть</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="lab1_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab1_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="250">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="ChangePassword" Width="100" Height="30" Click="ChangePasswd_Click">Change password</Button>
+        <Button x:Name="UsersControl" Width="100" Height="30" Grid.Column="1" Click="UserControl_Click">Users Control</Button>
+
+        <Button x:Name="Exit" Width="100" Height="30" Grid.Row="1" Click="Exit_Click">Exit</Button>
+        <Button x:Name="AddUser" Width="100" Height="30" Grid.Row="1" Grid.Column="1" Click="AddUser_Click">Add User</Button>
+    </Grid>
+</Window>
